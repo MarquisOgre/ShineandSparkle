@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, FileText, Beaker, ClipboardList, DollarSign } from "lucide-react";
+import { Menu, Beaker, ClipboardList, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -8,7 +8,6 @@ const MobileNav = () => {
   const [open, setOpen] = useState(false);
 
   const menuItems = [
-    { to: "/invoice", label: "Invoice System", icon: FileText },
     { to: "/formulations", label: "Formulations", icon: Beaker },
     { to: "/prices", label: "Prices", icon: DollarSign },
     { to: "/indent-sheet", label: "Indent Sheet", icon: ClipboardList },
